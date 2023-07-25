@@ -10,7 +10,7 @@ trait BuildsRemoteFilePath
     {
         return sprintf(
             '%s/%s.tar.gz',
-            Config::get('geolocation.storage.path'),
+            Config::get('geolocation.storage.remote_path'),
             Config::get('geolocation.maxmind.edition')
         );
     }
