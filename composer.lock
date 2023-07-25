@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1de9602978bd2931223663d3d2f5d21e",
+    "content-hash": "5de08ef7ab6e4d3ecd97ce476d87a1ee",
     "packages": [
         {
             "name": "brick/math",
@@ -697,7 +697,7 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.7.0",
+            "version": "7.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
