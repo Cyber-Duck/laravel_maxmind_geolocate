@@ -1,0 +1,43 @@
+{
+    "name": "cyber-duck/laravel-geolocate",
+    "description": "Laravel Package to utilise MaxMind GeoLite2 Database for IP based GeoLocation",
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^8.67|^9.0|^10.0",
+        "illuminate/console": "^8.0|^9.0|^10.0",
+        "geoip2/geoip2": "^2.13",
+        "guzzlehttp/guzzle": "^7.7"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "CyberDuck\\GeoLocate\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CyberDuck\\GeoLocate\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Luke Sheppard",
+            "email": "luke@luke-sheppard.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CyberDuck\\GeoLocate\\LaravelGeoLocateProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.5"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php vendor/bin/testbench package:discover --ansi"
+        ]
+    }
+}
