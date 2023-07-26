@@ -13,7 +13,7 @@ class UpdateGeoLocationDatabaseCommand extends Command
 {
     use BuildsRemoteFilePath;
 
-    protected $name = 'geolocation:update';
+    protected $signature = 'geolocation:update';
 
     protected $description = 'Download a new version of GeoLite database, and store on the configured disk.';
 
