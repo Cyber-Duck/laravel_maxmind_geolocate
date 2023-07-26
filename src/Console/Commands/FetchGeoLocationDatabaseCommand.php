@@ -29,7 +29,7 @@ class FetchGeoLocationDatabaseCommand extends Command
 
         try {
             $archive = Storage::disk(Config::get('geolocation.storage.disk'))
-                ->get($this->buildRemoteFilePath() . '222');
+                ->get($this->buildRemoteFilePath());
         } catch (FileNotFoundException $ex) {
             return $this->handleRemoteFileMissing();
         }
